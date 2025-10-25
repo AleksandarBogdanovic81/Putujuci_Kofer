@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-color: #aeaeae;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+#content .content {
+    width: 1024px;
+    background-color: #EAEAE2;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#content .content img {
+    float: left;
+    width: 300px;
+    margin: 0 16px 0 0;
+}
+
+#content .content .text_under {
+    clear: both;
+}
+
+#content .content h1 {
+    font-size: 24px;
+    font-style: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 24px 0;
+}
+
+#content .content h2 {
+    font-size: 20px;
+    font-style: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#content .content p {
+    text-align: justify;
+    hyphens: auto;
+}
+
+#content .content .link_right {
+    display: flex;
+    justify-self: end;
+}
+
+#content .content .link {
+    display: flex;
+    justify-content: space-between;
+}
+
+#content .content .link_left {
+    display: flex;
+    justify-self: start;
+}
+
+/*Zavrsen content*/
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #content .content {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #content .content {
+        width: auto;
+    }
+    #content .content .content_img {
+        text-align: center;
+    }
+    #content .content img {
+        float: none;
+        margin: 0 0 16px 0;
+    }
+}

@@ -1,0 +1,909 @@
+:root {
+    --primary-kofer-color: #70445B;
+    --primary-putolovac-color: #EAEAE2;
+    --black-color: #000;
+    --white-color: #FFF;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-color: #CCC;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+#tape_header {
+    background-color: var(--primary-putolovac-color);
+
+}
+
+#tape_header .tape_header {
+    height: 76px;
+}
+
+#header {
+    background-color: var(--primary-kofer-color);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+#header #logotip {
+    justify-items: start;
+    align-self: center;
+}
+
+#header .logotip {
+    background-color: var(--primary-kofer-color);
+    background-image: url(Znak&Logotip/PK-Logotip.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 60px;
+    width: 102px;
+    margin: 8px 2rem;
+}
+
+#nav {
+    justify-items: end;
+    align-self: center;
+}
+
+#hamburger {
+    display: none;
+    font-size: 24px;
+    color: var(--white-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#nav ul {
+    margin-bottom: 0;
+    padding: 0 2rem;
+}
+
+#nav ul li {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+
+}
+
+#nav ul li a {
+    display: block;
+    padding: 16px 8px;
+    transition: 0.5s 0s font-size ease;
+}
+
+#nav ul li a:link,
+#nav ul li a:visited {
+    color: var(--white-color);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#nav ul li a:hover {
+    color: var(--primary-kofer-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    background: var(--primary-putolovac-color);
+    cursor: pointer;
+}
+
+#nav ul li a:active {
+    color: var(--black-color);
+    font-weight: 500;
+    text-decoration: none;
+    background: var(--primary-putolovac-color);
+}
+
+#header,
+#header .logotip {
+    animation: opacity forwards 6s;
+}
+
+@keyframes opacity {
+    0% {
+        background-color: var(--primary-kofer-color);
+    }
+    50% {
+        background-color: hsla(329, 24%, 35%, 0.5);
+    }
+    100% {
+        background-color: var(--primary-kofer-color);
+    }
+}
+
+/*Zavrseni header*/
+
+#hero {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(NON/Hero.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#hero #znak {
+    justify-items: start;
+    align-self: center;
+}
+
+#hero .znak {
+    background-image: url(Znak&Logotip/PK-Znak.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 328px;
+    width: 252px;
+    margin: 8px 0 8px 64px;
+}
+
+#hero #text_hero {
+    justify-items: end;
+    align-content: space-around;
+}
+
+#hero #text_hero h1,
+#hero #text_hero h2 {
+    text-transform: uppercase;
+    text-align: right;
+    color: var(--black-color);
+}
+
+#hero #text_hero h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    padding: 0 2rem 0 0;
+}
+
+#hero #text_hero h1 {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    padding: 0 22px 0 0;
+}
+
+span {
+    color: var(--primary-kofer-color);
+}
+
+/*Zavrseni hero*/
+
+#tape_main {
+    background-color: var(--primary-kofer-color);
+}
+
+#tape_main .tape_main {
+    height: 1rem;
+}
+
+.main {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(NON/Main.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.main #photo-01 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(NON/N-600-01.jpg);
+    margin: 30px 2rem 10px;
+}
+
+.main #photo-04 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(NON/N-600-04.jpg);
+    margin: 30px 2rem 10px;
+}
+
+.main #text-01,
+.main #text-04 {
+    width: 600px;
+    height: 400px;
+    margin: 30px 2rem 10px 0;
+    align-content: space-around;
+}
+
+.main #text-02,
+.main #text-05 {
+    width: 600px;
+    height: 400px;
+    margin: 20px 2rem 20px;
+    align-content: space-around;
+}
+
+.main #photo-02 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(NON/N-600-02.jpg);
+    margin: 20px 2rem 20px 0;
+}
+
+.main #photo-05 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(NON/N-600-05.jpg);
+    margin: 20px 2rem 20px 0;
+}
+
+.main #photo-03 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(NON/N-600-03.jpg);
+    margin: 10px 2rem 30px;
+}
+
+.main #photo-06 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(NON/N-600-06.jpg);
+    margin: 10px 2rem 30px;
+}
+
+.main #text-03,
+.main #text-06 {
+    width: 600px;
+    height: 400px;
+    margin: 10px 2rem 30px 0;
+    align-content: space-around;
+}
+
+.main div[id*="photo"] {
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 600px;
+    height: 400px;
+    border: solid 4px var(--primary-kofer-color);
+    box-shadow: 4px 4px 4px 4px #CCC;
+}
+
+.main #text-01 p,
+.main #text-02 p,
+.main #text-03 p,
+.main #text-04 p,
+.main #text-05 p,
+.main #text-06 p {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--black-color);
+    text-align: center;
+}
+
+.main #image-01 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(KPG/K-555-01.JPG);
+    margin: 16px 2rem 0;
+}
+
+.main #image-02 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(KPG/K-555-02.JPG);
+    justify-self: end;
+    margin: 16px 2rem 0 32px;
+}
+
+.main #image-03 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(KPG/K-555-03.JPG);
+    margin: 16px 2rem 0;
+}
+
+.main #image-04 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(KPG/K-555-04.JPG);
+    justify-self: end;
+    margin: 16px 2rem 0 32px;
+}
+
+.main #image-05 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(KPG/K-555-05.JPG);
+    margin: 16px 2rem 0;
+}
+
+.main #image-06 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(KPG/K-555-06.JPG);
+    justify-self: end;
+    margin: 16px 2rem 0 32px;
+}
+
+.main #image-07 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(KPG/P-555-01.jpg);
+    margin: 16px 2rem 0;
+}
+
+.main #image-08 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(KPG/P-555-02.jpg);
+    justify-self: end;
+    margin: 16px 2rem 0 32px;
+}
+
+.main #image-09 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(KPG/P-555-03.jpg);
+    margin: 16px 2rem 0;
+}
+
+.main #image-10 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(KPG/P-555-04.jpg);
+    justify-self: end;
+    margin: 16px 2rem 0 32px;
+}
+
+.main #image-11 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(KPG/P-555-05.jpg);
+    margin: 16px 2rem 0;
+}
+
+.main #image-12 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(KPG/P-555-06.jpg);
+    justify-self: end;
+    margin: 16px 2rem 0 32px;
+}
+
+.main #image-13 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(KPG/G-555-01.jpg);
+    margin: 16px 2rem 0;
+}
+
+.main #image-14 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(KPG/G-555-02.jpg);
+    justify-self: end;
+    margin: 16px 2rem 0 32px;
+}
+
+.main #image-15 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(KPG/G-555-03.jpg);
+    margin: 16px 2rem 0;
+}
+
+.main #image-16 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(KPG/G-555-04.jpg);
+    justify-self: end;
+    margin: 16px 2rem 0 32px;
+}
+
+.main #image-17 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(KPG/G-555-05.jpg);
+    margin: 16px 2rem 0;
+}
+
+.main #image-18 {
+    background-color: var(--primary-putolovac-color);
+    background-image: url(KPG/G-555-06.jpg);
+    justify-self: end;
+    margin: 16px 2rem 0 32px;
+}
+
+.main div[id*="image"] {
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 370px;
+    width: 555px;
+    border: solid 4px var(--primary-kofer-color);
+    box-shadow: 4px 4px 4px 4px #CCC;
+}
+
+.main #data-01,
+.main #data-03,
+.main #data-05,
+.main #data-07,
+.main #data-09,
+.main #data-11,
+.main #data-13,
+.main #data-15,
+.main #data-17 {
+    display: flex;
+    justify-content: space-between;
+    width: 555px;
+    margin-left: 32px;
+}
+
+.main #data-02,
+.main #data-04,
+.main #data-06,
+.main #data-08,
+.main #data-10,
+.main #data-12,
+.main #data-14,
+.main #data-16,
+.main #data-18 {
+    display: flex;
+    justify-content: space-between;
+    width: 555px;
+    justify-self: end;
+    margin-right: 32px;
+}
+
+.main p {
+    color: var(--black-color);
+    font-weight: 500;
+    margin: 8px 0 0 0;
+    padding: 0;
+}
+
+.main a {
+    display: block;
+    color: var(--black-color);
+    font-weight: 500;
+    margin: 8px 0 0 0;
+    padding: 0;
+}
+
+.main #subtext {
+    display: flex;
+    justify-content: start;
+    padding: 0 32px;
+}
+
+.main #subtext .subtext-01 {
+    margin-right: auto;
+}
+
+.main #subtext .subtext-06 {
+    margin-left: auto;
+}
+
+.main a[class*="subtext"] {
+    display: block;
+    color: var(--black-color);
+    font-weight: 500;
+    margin: 26px 0 16px 0;
+}
+
+.main p[class*="subtext"] {
+    color: var(--black-color);
+    font-weight: 500;
+    margin: 26px 2px 16px 2px;
+}
+
+.main #subtext .subtext-02 {
+    margin-right: 2px;
+}
+
+#main #form {
+    width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+#main #form input[type="text"],
+#main #form #message {
+    width: 500px;
+    border: solid 3px var(--primary-kofer-color);
+    border-radius: 8px;
+    margin: 32px 0 0 0;
+}
+
+#main #form #submit {
+    background-color: var(--primary-kofer-color);
+    border: solid 3px var(--primary-kofer-color);
+    border-radius: 8px;
+    margin: 32px 0 0 0;
+}
+
+#main #form label {
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+#main #form label[for="name"]::after,
+#main #form label[for="address"]::after {
+    content: " (Obavezno polje)";
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+#main #form #submit {
+    color: var(--white-color);
+    transition: 1s 0s transform cubic-bezier(.06,.6,.87,.32);
+}
+  
+#main #form #submit:hover {
+    transform: scale(1.5, 1.5);
+}
+
+/*Zavrseni main*/
+
+#footer {
+    background-color: var(--primary-kofer-color);
+}
+
+#footer img {
+    height: 30px;
+}
+
+#footer #icons_footer {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#footer #info_footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+
+#footer #info_footer .info_footer-01 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 32px;
+}
+
+#footer #info_footer p {
+    margin: 0 0 0 16px;
+    color: var(--white-color);
+}
+
+/*Zavrseni footer*/
+
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+    .main div[id*="photo"] {
+        width: 400px;
+    }
+    .main #photo-01,
+    .main #photo-02,
+    .main #photo-03,
+    .main #photo-04,
+    .main #photo-05,
+    .main #photo-06 {
+        margin: 20px auto;
+    }
+    .main #text-01,
+    .main #text-02,
+    .main #text-03,
+    .main #text-04,
+    .main #text-05,
+    .main #text-06 {
+        width: 400px;
+        margin: 10px auto;
+    }
+    .main #text-01 p,
+    .main #text-02 p,
+    .main #text-03 p,
+    .main #text-04 p,
+    .main #text-05 p,
+    .main #text-06 p {
+        font-size: 20px;
+        margin: 20px auto;
+    }
+    .main div[id*="image"] {
+        width: 400px;
+    }
+    .main #image-01,
+    .main #image-02,
+    .main #image-03,
+    .main #image-04,
+    .main #image-05,
+    .main #image-06,
+    .main #image-07,
+    .main #image-08,
+    .main #image-09,
+    .main #image-10,
+    .main #image-11,
+    .main #image-12,
+    .main #image-13,
+    .main #image-14,
+    .main #image-15,
+    .main #image-16,
+    .main #image-17,
+    .main #image-18 {
+        margin: 16px auto;
+    }
+    .main #data-01,
+    .main #data-02,
+    .main #data-03,
+    .main #data-04,
+    .main #data-05,
+    .main #data-06,
+    .main #data-07,
+    .main #data-08,
+    .main #data-09,
+    .main #data-10,
+    .main #data-11,
+    .main #data-12,
+    .main #data-13,
+    .main #data-14,
+    .main #data-15,
+    .main #data-16,
+    .main #data-17,
+    .main #data-18 {
+        width: 400px;
+        justify-self: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1026px) and (max-width: 1199px) {
+    #header {
+        display: block;
+        justify-items: center;
+        text-align: center;
+    }
+    #header #logotip {
+        justify-items: center;
+        padding-top: 16px;
+    }
+    #nav {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #header {
+        display: block;
+        justify-items: center;
+        text-align: center;
+    }
+    #header #logotip {
+        justify-items: center;
+        padding-top: 16px;
+    }
+    #nav {
+        width: auto;
+    }
+    #hero #text_hero h2 {
+        font-size: 24px;
+    }
+    #hero #text_hero h1 {
+        font-size: 44px;
+        letter-spacing: 2px;
+        padding: 0 30px 0 0;
+    }
+    .main div[id*="photo"] {
+        width: 300px;
+    }
+    .main #photo-01,
+    .main #photo-02,
+    .main #photo-03,
+    .main #photo-04,
+    .main #photo-05,
+    .main #photo-06 {
+        margin: 20px auto;
+    }
+    .main #text-01,
+    .main #text-02,
+    .main #text-03,
+    .main #text-04,
+    .main #text-05,
+    .main #text-06 {
+        width: 300px;
+        margin: 10px auto;
+    }
+    .main #text-01 p,
+    .main #text-02 p,
+    .main #text-03 p,
+    .main #text-04 p,
+    .main #text-05 p,
+    .main #text-06 p {
+        font-size: 16px;
+        margin: 20px auto;
+    }
+    .main div[id*="image"] {
+        width: 300px;
+    }
+    .main #image-01,
+    .main #image-02,
+    .main #image-03,
+    .main #image-04,
+    .main #image-05,
+    .main #image-06,
+    .main #image-07,
+    .main #image-08,
+    .main #image-09,
+    .main #image-10,
+    .main #image-11,
+    .main #image-12,
+    .main #image-13,
+    .main #image-14,
+    .main #image-15,
+    .main #image-16,
+    .main #image-17,
+    .main #image-18 {
+        margin: 16px auto;
+    }
+    .main #data-01,
+    .main #data-02,
+    .main #data-03,
+    .main #data-04,
+    .main #data-05,
+    .main #data-06,
+    .main #data-07,
+    .main #data-08,
+    .main #data-09,
+    .main #data-10,
+    .main #data-11,
+    .main #data-12,
+    .main #data-13,
+    .main #data-14,
+    .main #data-15,
+    .main #data-16,
+    .main #data-17,
+    .main #data-18 {
+        width: 300px;
+        justify-self: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #main #form {
+        width: 500px;
+    }
+    #main #form input[type="text"],
+    #main #form #message {
+        width: 400px;
+    }
+} 
+
+@media screen and (max-width: 768px) {
+    #header {
+        display: block;
+        justify-items: center;
+        text-align: center;
+    }
+    #header #logotip {
+        justify-items: center;
+        padding-top: 16px;
+    }
+    #nav {
+        width: auto;
+    }
+    #hamburger {
+        display: block;
+    }
+    #nav ul {
+        display: none;
+    }
+    #hero .znak {
+        height: 164px;
+        justify-self: center;
+        margin: 8px 0;
+    }
+    #hero #text_hero {
+        justify-items: center;
+    }   
+    #hero #text_hero h2 {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 16px;
+        padding: 0;
+    }
+    #hero #text_hero h1 {
+        font-size: 40px;
+        letter-spacing: 0;
+        padding: 0 32px 0 0;
+        padding: 0;
+    }
+    #main-01, #main-02, #main-03 {
+        flex-direction: column;
+        justify-items: center;
+        text-align: center;
+    }
+    #main-02 {
+        flex-direction: column-reverse;
+    }
+    .main div[id*="photo"] {
+        width: 246px;
+    }
+    .main #photo-01,
+    .main #photo-02,
+    .main #photo-03,
+    .main #photo-04,
+    .main #photo-05,
+    .main #photo-06 {
+        margin: 20px auto;
+    }
+    .main #text-01,
+    .main #text-02,
+    .main #text-03,
+    .main #text-04,
+    .main #text-05,
+    .main #text-06 {
+        width: 246px;
+        margin: 20px auto;
+    }
+    .main #text-01 p,
+    .main #text-02 p,
+    .main #text-03 p,
+    .main #text-04 p,
+    .main #text-05 p,
+    .main #text-06 p {
+        font-size: 16px;
+        margin: 20px auto;
+    }
+    .main div[id*="image"] {
+        width: 246px;
+    }
+    .main #image-01,
+    .main #image-02,
+    .main #image-03,
+    .main #image-04,
+    .main #image-05,
+    .main #image-06,
+    .main #image-07,
+    .main #image-08,
+    .main #image-09,
+    .main #image-10,
+    .main #image-11,
+    .main #image-12,
+    .main #image-13,
+    .main #image-14,
+    .main #image-15,
+    .main #image-16,
+    .main #image-17,
+    .main #image-18 {
+        margin: 16px auto;
+    }
+    .main #data-01,
+    .main #data-02,
+    .main #data-03,
+    .main #data-04,
+    .main #data-05,
+    .main #data-06,
+    .main #data-07,
+    .main #data-08,
+    .main #data-09,
+    .main #data-10,
+    .main #data-11,
+    .main #data-12,
+    .main #data-13,
+    .main #data-14,
+    .main #data-15,
+    .main #data-16,
+    .main #data-17,
+    .main #data-18 {
+        width: 246px;
+        justify-self: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .main #data-06,
+    .main #data-12,
+    .main #data-18 {
+        margin-bottom: 16px;
+    }
+    #main #form {
+        width: 350px;
+    }
+    #main #form input[type="text"],
+    #main #form #message {
+        width: 250px;
+    }
+    #footer #info_footer {
+        display: block;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    #footer #info_footer .info_footer-01 {
+        justify-content: center;
+    }
+    #footer #info_footer p {
+        font-size: 12px;
+        padding-right: 32px;
+    }
+    #footer #info_footer .info_footer-01 p {
+        padding-right: 0;
+    }
+    #footer #info_footer .info_footer-02 p {
+        margin-left: 0;
+        padding-right: 0;
+    }
+}
